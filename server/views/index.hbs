@@ -1,0 +1,30 @@
+
+  <main>
+    <section>
+      <h3>{{resultTitle}}</h3>
+      <div class="movies">
+        {{#each filmsResult}}
+        <div class="film-card">
+          <div class="film">
+            <img src={{this.img}} alt={{this.title}}>
+            <div class="rating high-rating"><p>{{this.rating}}</p></div>
+            <p class="film-name"><span data-title="{{this.dataAttribute}}">{{this.title}}</span></p>
+            <div class="film-description d-flex justify-content-between">
+              <p>{{this.date}}</p>
+              {{#if this.isAuth}}
+              <p id="add-to-favourite"><span data-film-id={{this.id}} class="heart">&hearts;</span></p>
+              {{/if}}
+              {{#if this.isDeleteBtn}}
+              <p id="delete-from-favourite"><i data-film-id={{this.id}} class="gg-trash"></i></p>
+              {{/if}}
+              <p><a href="/info/{{this.id}}">More</a></p>
+            </div>
+          </div>
+        </div>
+        
+        {{/each}}
+        
+      </div>
+    </section>
+  </main>
+

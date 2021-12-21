@@ -1,0 +1,57 @@
+<main class="form">
+  <h3 class="text-center">Поиск фильмов</h3>
+  <form id="searchByNameForm" class="mb-3" action="/search/byName" method="POST">
+    <div class="mb-3">
+      <label for="searchByName" class="form-label">По названию</label>
+      <input name="filmInput" required type="text" class="form-control" id="searchByName">
+    </div>
+    <button type="submit" class="btn btn-block">Найти</button>
+  </form>
+  <form id="searchByTypeForm" class="mb-3" action="/search/byType" method="POST">
+      <div class="mb-3">
+        <label for="searchByType" class="form-label">По типу</label>
+        <select class="form-select" name="type" aria-label="Default select example" id="searchByType">
+        <option selected value="popular">Популярные</option>
+        <option value="top_rated">Топ рейтинг</option>
+        <option value="upcoming">Новинки</option>
+        <option value="now_playing">Сейчас на экранах</option>
+      </select> 
+      </div>
+      <button type="submit" class="btn btn-block">Найти</button>
+  </form>
+
+      {{!-- <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input name="email" required type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Пароль</label>
+      <input name="password" required type="password" minlength="8" class="form-control" id="firstPassword">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Подтвердите пароль</label>
+      <input name="confirmPassword" required type="password" minlength="8" class="form-control" id="confirmPassword">
+    </div>
+    <div class="mb-3">
+      <label for="group_select_title" class="form-label">Выберите группу</label>
+      <select class="form-select" name="group" aria-label="Default select example" id="group_select_title" value="">
+        <option value="" disabled selected value></option>
+        <option value="Орлы">Орлы</option>
+        <option value="Совы">Совы</option>
+        <option value="Пчёлы">Пчёлы</option>
+        <option value="Медведи">Медведи</option>
+        <option value="Еноты">Еноты</option>
+        <option value="Лисы">Лисы</option>
+        <option value="Волки">Волки</option>
+        <option value="Бобры">Бобры</option>
+        <option value="Ежи">Ежи</option>
+        <option value="Тигры">Тигры</option>
+      </select> 
+    </div>
+    <div class="mb-3">
+      <label for="year_input" class="form-label">Выберите год выпуска</label>
+      <input name="issueYear" type="number" min="2018" max="2077" step="1" class="form-control" id="year_input">
+
+    </div> --}}
+
+</main>

@@ -1,0 +1,22 @@
+<main class="form">
+  <h3 class="text-center">Зарегистрироваться</h3>
+  <form id="registerForm" action="/signup" method="POST">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Ваше имя</label>
+      <input name="username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+      <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Пароль</label>
+      <input name="password" type="password" minlength="8" class="form-control" id="firstPassword">
+    </div>
+      <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Подтвердите пароль</label>
+      <input name="confirmPassword" type="password" minlength="8" class="form-control" id="confirmPassword">
+    </div>
+  <button type="submit" class="btn btn-block">Зарегистрироваться</button>
+  </form>
+</main>

@@ -1,0 +1,27 @@
+<main>
+    <section>
+      <h3 class="text-center">Мои любимые фильмы</h3>
+      <div class="movies">
+        {{#each userFilms}}
+        <div class="film-card">
+          <div class="film">
+            <img src="/img/{{this.img}}" alt={{this.title}}>
+            <div class="rating high-rating"><p>{{this.rating}}</p></div>
+            <p class="film-name">{{this.title}}</p>
+            <p class="film-description">{{this.year}}, {{this.genre}}</p>
+            <div class="yellow-block">
+              <div class="orange-block">
+                  <div class="purple-block">
+                      <p>Плюс</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <button data-film-id={{this.id}} class="btn-block remove-from-favourite">Remove from &hearts;</button>  
+        </div>
+        
+        {{/each}}
+        
+      </div>
+    </section>
+  </main>
